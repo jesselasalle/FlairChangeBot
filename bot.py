@@ -14,7 +14,7 @@ class bot():
 
         for submission in submissions:
             choices = submission.flair.choices()
-            template_id = next(flair for flair in choices if flair["flair_text"] == config.flair_to_set)["flair_template_id"]
+            template_id = next(flair for flair in choices if flair["flair_text"] == config.flair_text_to_set)["flair_template_id"]
             submission.flair.select(template_id)
 
 
