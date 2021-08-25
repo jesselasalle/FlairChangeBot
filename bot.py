@@ -1,6 +1,5 @@
 import config
 import praw
-import sys
 
 class bot():
     def __init__(self):
